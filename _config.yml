@@ -18,21 +18,198 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Your awesome title
-email: your-email@example.com
+# remote_theme: dieghernan/chulapa
+
+locale: "en-GB"
+title: Cookie Blog
+title_separator: "-"
+subtitle: AI Art
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  A blog discussing AI and art.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+url: "https://cookieblog.net" # the base hostname & protocol for your site, e.g. http://example.com
+words_per_minute: 200
+timezone: "Europe/Ankara"
+
+# SEO
+og_image: 
+author: 
+  name: "kuyta, sir potata"
+  avatar: 
+  location: "Ankara, Turkey"
+  links:
+    - url: "mkutaybzkrt01101011@gmail.com"
+      icon: "fa-regular fa-envelope"
+      label: Email
+    - url: "zdilaycelik@gmail.com"
+      icon: "fa-regular fa-envelope"
+      label: Email
+
+fa_verion: 6
+
+gtag_id: 
+analytics_id: 
+
+search:
+  provider: lunr
+  labe: "Search"
+  landing_page: "/search"
+  lunr_maxwords: 20
+
+comments:
+  provider: "Disqus"
+  disqus_shortname: "cookieblog.disqus.com/admin/"
+
+navbar:
+  style: "dual"
+  expand:
+  brand:
+    title: "Cookie Blog"
+    url: 
+    img: 
+  nav:
+  - title: AI
+    url: "/ai"
+  - title: ART
+    child:
+     - title: "literature"
+       url: "/lit"
+     - title: "image"
+       url: "/im"
+
+ooter:
+  links:
+    - label: Cookie Blog
+      icon:
+      url: "cookieblog.net"
+  copyright:
+
+chulapa-skin:
+  highlight: # default["default"]
+  skin: sketchy # Optional predefined skins
+  autothemer: # Bool: Use autotheming
+  vars:
+    primary: #default ["#007bff"] - Bootstrap blue
+
+# Blog pagination: on this site /blog/index.html. https://jekyllrb.com/docs/pagination/
+paginate: 4
+paginate_path: "/blog/page:num/"
+# paginator_maxnum: 3  #default[3] Custom: max of number to be displayed on the paginator
+
+# Collections https://jekyllrb.com/docs/step-by-step/09-collections/
+collections:
+  demo:
+    output: true
+    permalink: /demo/:name
+  docs:
+    output: true
+    permalink: /docs/:name
+  skins:
+    output: true
+    permalink: /skins/:name
+collections_dir     : docs/collections
+permalink           : /:year:month:day_:title/
+
+
+# Defaults https://jekyllrb.com/docs/configuration/front-matter-defaults/
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"
+      header_type: "base"
+      include_on_search   : false
+      cloudtag_url        : "/tags"       #This is where the link on tags would redirect
+      cloudcategory_url   : "/categories" #This is where the link on categories would redirect
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      header_type       : "post"
+      include_on_search : true
+      include_on_feed   : true
+      show_date         : true
+      show_related      : true
+      show_bottomnavs   : true
+      show_sociallinks  : true
+      show_comments     : true
+      show_tags         : true
+      show_categories   : true
+      show_author       : true
+      show_toc          : false
+  -
+    scope:
+      path: ""
+      type: "demo"
+    values:
+      header_type       : "hero"
+      show_related      : true
+      show_bottomnavs   : true
+      show_sociallinks  : true
+      include_on_search : true
+      include_on_feed   : true
+
+
+
+
+# XX. Other settings - no need to modify
+# HTML Compression
+# - https://jch.penibelst.de/
+compress_html:
+  clippings: all
+  blanklines: true
+
+plugins:
+  - jekyll-github-metadata
+  - jekyll-paginate
+  - jekyll-include-cache
+  - jekyll-sitemap
+
+# Exclude these files from production site
+exclude:
+  - LICENSE
+  - README.md
+  - Gemfile
+  - vendor
+  - /docs # ignore Chulapa /docs
+  - /test # ignore Chulapa /test
+  - github-metrics.svg
+
+include:
+ - _pages
+
+# Conversion
+markdown: kramdown
+highlighter: rouge
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false
+
+# Markdown Processing
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+  footnote_nr: 1
+  footnote_backlink: '&uarr;'
+  entity_output: as_char
+  toc_levels: 2..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
+
+# Sass/SCSS
+sass:
+  sass_dir: _sass
+  style: compressed # https://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
+
+theme: minimal-mistakes-jekyll
 
 # Build settings
-theme: minima
-plugins:
-  - jekyll-feed
+# theme: minima
+# plugins:
+#   - jekyll-feed
 
 # Exclude from processing.
 # The following items will not be processed, by default.
