@@ -38,6 +38,9 @@ search_provider: "lunr"
 lunr:
   search_within_pages: true
 
+analytics:
+  provider: "custom"
+
 defaults:
   - scope:
       path: ""
