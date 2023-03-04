@@ -29,6 +29,8 @@ words_per_minute: 180 # to estimate read time for each post
 
 paginate: 4
 
+include: ["_pages"]
+
 comments:
   provider: "disqus"
   disqus:
