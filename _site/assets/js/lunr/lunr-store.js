@@ -1,12 +1,24 @@
 var store = [{
+        "title": "All Of Our Posts",
+        "excerpt":" ","categories": [],
+        "tags": [],
+        "url": "/2023/03/01/every-post.html",
+        "teaser": "/assets/images/default-teaser.png"
+      },{
         "title": "Welcome To Our Cookie Blog",
         "excerpt":"Sir Potata: Hello and welcome to The Cookie Blog. This is where we, two (nerdy) high-school students, voice our opinions about AI art, have fun with it and explain to you readers about what is all the deal going around it. We hope to learn many things, discover ways to...","categories": ["intro"],
         "tags": [],
         "url": "/intro/2023/03/01/welcome-to-cookie-blog.html",
-        "teaser": "/assets/images/cyberpunk-japanese.png"
+        "teaser": "/assets/images/default-teaser.png"
       },{
     "title": null,
     "excerpt":"     404     Page not found :(    The requested page could not be found.   ","url": "http://localhost:4000/404.html"
+  },{
+    "title": null,
+    "excerpt":"Hi! We are Kuyta and Sir Potata.  ","url": "http://localhost:4000/about/"
+  },{
+    "title": null,
+    "excerpt":"Super customizable Everything from the menus, sidebars, comments, and more can be configured or set with YAML Front Matter. Learn more Responsive layouts Built with HTML5 + CSS3. All layouts are fully responsive with helpers to augment your content. Learn more 100% free Free to use however you want under...","url": "http://localhost:4000/"
   },{
     "title": null,
     "excerpt":"","url": "http://localhost:4000/"
