@@ -25,6 +25,8 @@
 
 
 
+  <meta property="og:image" content="http://localhost:4000/assets/images/site-logo.png">
+
 
 
 
@@ -60,8 +62,6 @@
 
 
 
-  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Cookie Blog Feed">
-
 
 <!-- https://t.co/dKP3o1e -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -94,10 +94,6 @@
   </ul>
 </nav>
 
-    <!--[if lt IE 9]>
-<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
-<![endif]-->
-
     
 
 <div class="masthead">
@@ -105,13 +101,20 @@
     <div class="masthead__menu">
       <nav id="site-nav" class="greedy-nav">
         
+          <a class="site-logo" href="/"><img src="/assets/images/site-logo.png" alt="Cookie Blog"></a>
+        
         <a class="site-title" href="/">
           Cookie Blog
-          
+          <span class="site-subtitle">AI Art</span>
         </a>
         <ul class="visible-links"><li class="masthead__menu-item">
               <a href="https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/">Quick-Start Guide</a>
             </li></ul>
+        
+        <button class="search__toggle" type="button">
+          <span class="visually-hidden">Toggle search</span>
+          <i class="fas fa-search"></i>
+        </button>
         
         <button class="greedy-nav__toggle hidden" type="button">
           <span class="visually-hidden">Toggle menu</span>
@@ -149,6 +152,17 @@
     </div>
 
     
+      <div class="search-content">
+        <div class="search-content__inner-wrap"><form class="search-content__form" onkeydown="return event.key != 'Enter';">
+    <label class="sr-only" for="search">
+      Enter your search term...
+    </label>
+    <input type="search" id="search" class="search-input" tabindex="-1" placeholder="Enter your search term..." />
+  </form>
+  <div id="results" class="results"></div></div>
+
+      </div>
+    
 
     <div id="footer" class="page__footer">
       <footer>
@@ -158,11 +172,11 @@
         <div class="page__footer-follow">
   <ul class="social-icons">
     
-
+      <li><strong>Follow:</strong></li>
     
 
     
-      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+
     
   </ul>
 </div>
@@ -178,9 +192,35 @@
 
 
 
+<script src="/assets/js/lunr/lunr.min.js"></script>
+<script src="/assets/js/lunr/lunr-store.js"></script>
+<script src="/assets/js/lunr/lunr-en.js"></script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-7NFQXPNGMF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-7NFQXPNGMF');
+</script>
 
 
 
+
+
+
+
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-7NFQXPNGMF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-7NFQXPNGMF');
+</script>
 
 
 
