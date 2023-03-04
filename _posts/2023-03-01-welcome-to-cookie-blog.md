@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: posts
 title:  "Welcome To Our Cookie Blog"
 date:   2023-03-01 21:47:55 +0300
 categories: intro

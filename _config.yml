@@ -12,6 +12,9 @@ url: "https://cookieblog.net" # the base hostname & protocol for your site, e.g.
 remote_theme: "mmistakes/minimal-mistakes@4.24.0"
 plugins:
   - jekyll-include-cache
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
 
 minimal_mistakes_skin: "dirt" # mint, air, default
 
@@ -24,13 +27,15 @@ og_image: "/assets/images/site-logo.png" # open graph default image
 
 words_per_minute: 180 # to estimate read time for each post
 
+paginate: 4
+
 comments:
   provider: "disqus"
   disqus:
     shortname: "https://cookieblog.disqus.com/admin/"
 
-# atom_feed:
-#   hide: true # hide RSS and feed.xml stuff in the site
+atom_feed:
+  hide: true
 
 search: true
 search_provider: "lunr"
@@ -45,9 +50,19 @@ defaults:
       path: ""
       type: posts
     values: 
-      show_date: true
+      layout: single
+      author_profile: true
       read_time: true
       comments: true
+      share: true
+      related: true
+
+footer:
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/Cookie-Blog/cookieblog.github.io/"
+
 
 # Exclude from processing.
 # exclude:
