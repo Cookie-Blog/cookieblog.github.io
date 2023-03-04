@@ -9,7 +9,7 @@ url: "https://cookieblog.net" # the base hostname & protocol for your site, e.g.
 # github_username:  jekyll
 
 # Build settings
-theme: minimal-mistakes-jekyll
+remote_theme: minimal-mistakes-jekyll
 plugins:
   - jekyll-feed
   - jekyll-include-cache
