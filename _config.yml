@@ -33,7 +33,7 @@ paginate_path: /page:num/
 include: ["_pages"]
 
 comments:
-  provider: "disqus"
+  provider: disqus
   disqus:
     shortname: "https://cookie-blog.disqus.com/admin/"
 
