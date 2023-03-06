@@ -35,7 +35,7 @@ include: ["_pages"]
 comments:
   provider: "disqus"
   disqus:
-    shortname: "https://cookieblog.disqus.com/admin/"
+    shortname: "https://cookie-blog.disqus.com/admin/"
 
 atom_feed:
   hide: true

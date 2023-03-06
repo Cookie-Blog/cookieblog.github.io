@@ -27,7 +27,7 @@ var store = [{
     "excerpt":"Super customizable Everything from the menus, sidebars, comments, and more can be configured or set with YAML Front Matter. Learn more Responsive layouts Built with HTML5 + CSS3. All layouts are fully responsive with helpers to augment your content. Learn more 100% free Free to use however you want under...","url": "http://localhost:4000/"
   },{
     "title": "The Cookie Blog",
-    "excerpt":"Photo Credit: MidJourney What The Fuck Is AI? Kuyta: Hello to everyone again! In this post, we will discuss the magical thingamajig of AI. Read More Image courtesy of Unsplash Placeholder 2 This is some sample content that goes here with Markdown formatting. Read More Placeholder 3 This is some...","url": "http://localhost:4000/"
+    "excerpt":"Photo credit: MidJourney What The Fuck Is AI? Kuyta: Hello to everyone again! In this post, we will discuss the magical thingamajig of AI. Read More Image courtesy of Unsplash Placeholder 2 This is some sample content that goes here with Markdown formatting. Read More Placeholder 3 This is some...","url": "http://localhost:4000/"
   },{
     "title": null,
     "excerpt":"var idx = lunr(function () { this.field('title') this.field('excerpt') this.field('categories') this.field('tags') this.ref('id') this.pipeline.remove(lunr.trimmer) for (var item in store) { this.add({ title: store[item].title, excerpt: store[item].excerpt, categories: store[item].categories, tags: store[item].tags, id: item }) } }); $(document).ready(function() { $('input#search').on('keyup', function () { var resultdiv = $('#results'); var query = $(this).val().toLowerCase(); var result = idx.query(function...","url": "http://localhost:4000/assets/js/lunr/lunr-en.js"
