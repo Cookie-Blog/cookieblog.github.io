@@ -16,9 +16,13 @@ excerpt: "Welcome to The Cookie Blog! This is a blog written and maintained by t
 #   - excerpt: 'Nullam suscipit et nam, tellus velit pellentesque at malesuada, enim eaque. Quis nulla, netus tempor in diam gravida tincidunt, *proin faucibus* voluptate felis id sollicitudin. Centered with `type="center"`'
 feature_row:
   - image_path: assets/images/astronaut-standing-infront-of-moon.png
+    image_caption: "Photo credit: [MidJourney](https://www.midjourney.com/)"
     alt: "Actually tho what is it?"
     title: "What The Fuck Is AI?"
     excerpt: "**Kuyta:** Hello to everyone again! In this post, we will discuss the magical thingamajig of AI."
+    url: "ai/2023/03/01/what-is-ai.html"
+    btn_label: "Read More"
+    btn_class: "btn--primary"
   - image_path: /assets/images/unsplash-gallery-image-2-th.jpg
     image_caption: "Image courtesy of [Unsplash](https://unsplash.com/)"
     alt: "placeholder image 2"
